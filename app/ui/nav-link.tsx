@@ -14,9 +14,8 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import { SignOut } from './sign-out'
-import { useRouter } from 'next/router'
+
 export default function NavLink() {
-  const router = useRouter()
   return (
     <nav className="bg-gray-800 text-white w-fit h-full md:p-10 lg:p20">
       <div className="w-fit h-full hidden md:block">
