@@ -13,7 +13,7 @@ import {
   Text,
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
-import { SignOut } from './sign-out'
+import { SignOut } from './SignOut'
 
 export default function NavLink() {
   return (

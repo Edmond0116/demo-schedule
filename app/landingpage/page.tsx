@@ -1,6 +1,6 @@
 'use client'
 // import Image from 'next/image'
-import NavLink from '@/app/ui/nav-link'
+import NavLink from '@/app/ui/NavLink'
 import Burger from '@/app/ui/burger'
 import { Center, ChakraProvider, Divider } from '@chakra-ui/react'
 import { Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react'
