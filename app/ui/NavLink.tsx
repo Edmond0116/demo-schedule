@@ -72,6 +72,7 @@ export default function NavLink({ children }: { children: React.ReactNode }) {
           </MenuList>
         </Menu>
       </div>
+      {children}
     </nav>
   )
 }
