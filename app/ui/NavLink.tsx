@@ -1,3 +1,4 @@
+'use client'
 import Link from 'next/link'
 // import { SignIn } from './sign-in'
 import {
@@ -15,18 +16,24 @@ import {
 import { HamburgerIcon } from '@chakra-ui/icons'
 import { SignOut } from './SignOut'
 
-export default function NavLink() {
+export default function NavLink({ children }: { children: React.ReactNode }) {
   return (
     <nav className="bg-gray-800 text-white w-fit h-full md:p-10 lg:p20">
       <div className="w-fit h-full hidden md:block">
         <ul className="mt-4">
           <li>
-            <Link href="/" className="font-bold text-xs md:text-base">
+            <Link
+              href="/landingpage"
+              className="font-bold text-xs md:text-base"
+            >
               Introduction
             </Link>
           </li>
           <li>
-            <Link href="/product" className="font-bold text-xs md:text-base">
+            <Link
+              href="/landingpage/product"
+              className="font-bold text-xs md:text-base"
+            >
               Product Demo
             </Link>
           </li>
@@ -35,9 +42,9 @@ export default function NavLink() {
               Contact
             </Link>
           </li>
-          <li>
+          {/* <li>
             <SignOut />
-          </li>
+          </li> */}
         </ul>
       </div>
       <div className="md:hidden">
